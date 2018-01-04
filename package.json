@@ -1,0 +1,14 @@
+{
+  "name": "atom-theme-temp",
+  "theme": "ui",
+  "version": "0.0.0",
+  "description": "Atom theme temporary",
+  "keywords": [
+    "theme"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/atom/atom-theme-temp",
+  "engines": {
+    "atom": ">=1.0.0"
+  }
+}
