@@ -116,12 +116,12 @@
   }
 
   .inset-panel {
-    border: 1px solid @base-border-color;
+    border: var(--border);
   }
 
   .panel-heading {
     .text(highlight);
-    border-color: @base-border-color;
+    border-color: var(--border-color);
     background-color: @level-1-color;
   }
 
@@ -144,7 +144,7 @@
 .deprecation-cop {
   .deprecation-overview {
     background-color: @level-2-color;
-    border-bottom: 1px solid @base-border-color;
+    border-bottom: var(--border);
   }
 }
 
@@ -153,25 +153,35 @@
 
 .tool-bar {
   // Make it look the same as other panels
-  background-color: @level-3-color;
+  color: inherit;
+  background-color: var(--bg-below);
   border: none;
 
   // just a single border + more spacing
   &.tool-bar-horizontal .tool-bar-spacer {
     border-left: 0 none;
-    margin-left: .5em;
-    margin-right: .5em;
+    border-color: var(--border-color);
+    margin-left: var(--spacer);
+    margin-right: var(--spacer);
   }
   &.tool-bar-vertical .tool-bar-spacer {
     border-bottom: 0 none;
-    margin-top: .5em;
-    margin-bottom: .5em;
+    border-color: var(--border-color);
+    margin-top: var(--spacer);
+    margin-bottom: var(--spacer);
   }
 
   // only show button styles on hover
   button.tool-bar-btn {
-    background-color: @level-3-color;
+    color: inherit;
+    background-color: transparent;
     background-image: none;
-    border-color: @level-3-color;
+    border-color: transparent;
+
+    &:hover {
+      color: var(--fg-strong);
+      border-color: transparent;
+      background: var(--bg-selected);
+    }
   }
 }

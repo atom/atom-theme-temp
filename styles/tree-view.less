@@ -2,7 +2,7 @@
 
 .tree-view {
   font-size: @ui-size;
-  background: @tree-view-background-color;
+  background: var(--bg-below);
 
   .project-root.project-root {
     &:before {
@@ -16,7 +16,7 @@
 
   // Selected state
   .selected:before {
-    background: @background-color-selected;
+    background: var(--bg-selected);
   }
 
   // Focus + selected state
@@ -27,7 +27,7 @@
       color: contrast(@button-background-color-selected);
     }
     .selected:before {
-      background: @button-background-color-selected;
+      background: var(--accent);
     }
   }
 }

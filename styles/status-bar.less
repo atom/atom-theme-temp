@@ -3,13 +3,18 @@
 @status-bar-padding: @ui-padding;
 
 .status-bar {
-  font-size: @ui-size;
-  height: @status-bar-height;
-  line-height: @status-bar-height;
-  background-color: @level-3-color;
+  font-size: inherit;
+  height: var(--bar-height);
+  line-height: var(--bar-height);
+  color: var(--color-subtle);
+  background-color: var(--bg-below);
 
   .flexbox-repaint-hack {
     padding: 0; // override default
+  }
+
+  a {
+    color: inherit;
   }
 
   // underlines should only be used for external links
@@ -25,7 +30,8 @@
     vertical-align: top;
 
     &:hover {
-      background-color: @level-3-color-hover;
+      color: var(--fg-strong);
+      background-color: var(--bg-selected);
     }
     &:active {
       background-color: @level-3-color-active;

@@ -2,21 +2,22 @@
 // Panels
 
 atom-panel {
-  .text(normal);
+  color: inherit;
+  background-color: transparent;
   position: relative;
-  border-bottom: 1px solid @base-border-color;
+  border-bottom: var(--border);
 
   &.top {
-    border-right: 1px solid @base-border-color;
+    border-right: var(--border);
   }
   &.left {
-    border-right: 1px solid @base-border-color;
+    border-right: var(--border);
   }
   &.right {
-    border-left: 1px solid @base-border-color;
+    border-left: var(--border);
   }
   &.bottom {
-    border-right: 1px solid @base-border-color;
+    border-right: var(--border);
   }
   &.footer:last-child {
     border-bottom: none;
@@ -28,17 +29,17 @@ atom-panel {
 
 .panel {
   &.bordered {
-    border: 1px solid @base-border-color;
+    border: var(--border);
     border-radius: @component-border-radius;
   }
 }
 
 .inset-panel {
   position: relative;
-  background-color: @inset-panel-background-color;
+  background-color: transparent;
   border-radius: @component-border-radius;
   &.bordered {
-    border: 1px solid @base-border-color;
+    border: var(--border);
     border-radius: @component-border-radius;
   }
   & .panel-heading {
