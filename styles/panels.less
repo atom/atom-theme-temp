@@ -30,26 +30,26 @@ atom-panel {
 .panel {
   &.bordered {
     border: var(--border);
-    border-radius: @component-border-radius;
+    border-radius: var(--border-radius);
   }
 }
 
 .inset-panel {
   position: relative;
   background-color: transparent;
-  border-radius: @component-border-radius;
+  border-radius: var(--border-radius);
   &.bordered {
     border: var(--border);
-    border-radius: @component-border-radius;
+    border-radius: var(--border-radius);
   }
   & .panel-heading {
-    border-color: @inset-panel-border-color;
+    border-color: var(--border-radius);
   }
 }
 
 .panel-heading {
   .text(normal);
-  border-bottom: 1px solid @panel-heading-border-color;
+  border-bottom: var(--border);
   background-color: @panel-heading-background-color;
 
   .btn {

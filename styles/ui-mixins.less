@@ -18,22 +18,22 @@
 }
 
 .text(info) {
-  color: @text-color-info;
+  color: var(--accent-fg);
 }
 .text(success) {
-  color: @text-color-success;
+  color: var(--success-fg);
 }
 .text(warning) {
-  color: @text-color-warning;
+  color: var(--warning-fg);
 }
 .text(error) {
-  color: @text-color-error;
+  color: var(--error-fg);
 }
 
 .focus() {
   outline: none;
-  border-color: @accent-color;
-  box-shadow: 0 0 0 1px @accent-color;
+  border-color: var(--accent-fg);
+  box-shadow: 0 0 0 1px var(--accent-fg);
 }
 
 .valid() {
