@@ -1,5 +1,5 @@
 
-@btn-border: 1px solid @button-border-color;
+@btn-border: 1px solid var(--border-color);
 @btn-padding: 0 @ui-size/1.25;
 
 // Mixins -----------------------
@@ -9,11 +9,9 @@
   text-shadow: none;
   border: @btn-border;
   background-color: @color;
-  background-image: linear-gradient(lighten(@color, 2%), @color);
 
   &:hover {
     color: @text-color-highlight;
-    background-image: linear-gradient(lighten(@hover-color, 2%), @hover-color);
   }
   &:active {
     background: darken(@color, 4%);
@@ -183,4 +181,13 @@
   height: auto;
   font-size: 1.333333em;
   vertical-align: -.1em;
+}
+
+
+// Custom properties -----------------------
+
+.btn {
+  color: var(--control-fg);
+  border-color: var(--border-color);
+  background: var(--control-bg);
 }
