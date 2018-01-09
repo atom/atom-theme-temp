@@ -97,6 +97,21 @@
 
 	.package-card {
 		padding: @ui-padding;
+		background-color: var(--bg-highlight);
+		border-color: var(--border-color);
+
+		&:hover {
+      background-color: var(--bg-selected);
+    }
+
+    .package-name {
+      color: var(--fg-strong);
+    }
+
+    .meta-user .author {
+      color: var(--fg-subtle);
+    }
+
 		.meta-controls .status-indicator {
 			width: @ui-padding/4;
 			&:before {
@@ -128,9 +143,9 @@
 		padding-bottom: 0;
   }
   select.form-control {
-    color: var(--control-fg);
+    color: var(--fg-strong);
     border-color: var(--border-color);
-    background-color: var(--control-bg);
+    background-color: var(--bg-control);
   }
 
 	.update-all-button {
@@ -142,7 +157,7 @@
 	}
 
 	input[type="checkbox"] {
-		background-color: var(--input-bg);
+		background-color: var(--bg-input);
 		&:active,
 		&:checked {
 			background-color: var(--accent-bg);
@@ -154,9 +169,9 @@
   }
   
   .btn {
-    color: var(--control-fg);
+    color: var(--fg-strong);
     border: var(--border);
-    background: var(--control-bg);
+    background: var(--bg-control);
   }
 
   .settings-panel label {

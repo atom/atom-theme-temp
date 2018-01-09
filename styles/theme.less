@@ -1,0 +1,30 @@
+
+// Define different theme regions
+
+// App
+
+html {
+  --fg:        var(--app-fg);
+  --fg-strong: var(--app-fg-strong);
+  --fg-subtle: var(--app-fg-subtle);
+
+  --bg:           var(--app-bg);
+  --bg-highlight: var(--app-bg-highlight);
+  --bg-selected:  var(--app-bg-selected);
+  --bg-control:   var(--app-bg-control);
+  --bg-input:     var(--app-bg-input);
+}
+
+
+// Center panes
+atom-workspace > atom-workspace-axis.horizontal > atom-workspace-axis.vertical {
+  --fg:        var(--editor-fg);
+  --fg-strong: var(--editor-fg-strong);
+  --fg-subtle: var(--editor-fg-subtle);
+
+  --bg:           var(--editor-bg);
+  --bg-highlight: var(--editor-bg-highlight);
+  --bg-selected:  var(--editor-bg-selected);
+  --bg-control:   var(--editor-bg-control);
+  --bg-input:     var(--editor-bg-input);
+}

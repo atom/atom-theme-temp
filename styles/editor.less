@@ -2,23 +2,24 @@
 // Editor styles (background, gutter, guides)
 
 atom-text-editor {
-  color: var(--syntax);
-  background-color: var(--editor-bg);
+  
+  color: var(--fg);
+  background-color: var(--bg);
 
   .line.cursor-line {
-    background-color: ~'hsla( var(--editor-h), var(--editor-s), 66%, .1 )'; // needs to be semi transparent
+    // background-color: ~'hsla( var(--editor-h), var(--editor-s), 66%, .1 )'; // needs to be semi transparent
   }
 
   .indent-guide {
-    color: var(--editor-guide);
+    color: var(--bg-highlight);
   }
 
   .wrap-guide {
-    background-color: var(--editor-guide);
+    background-color: var(--bg-highlight);
   }
 
   .selection .region {
-    background-color: var(--editor-selection);
+    background-color: var(--bg-selected);
   }
 
   .invisible,
@@ -40,7 +41,7 @@ atom-text-editor {
   .find-result .region.region.region,
   .current-result .region.region.region {
     border-radius: 2px;
-    background-color: var(--editor-selection);
+    background-color: var(--bg-selected);
     transition: border-color .4s;
   }
   .find-result .region.region.region {
@@ -58,7 +59,7 @@ atom-text-editor {
 
       &.cursor-line {
         color: var(--fg-strong);
-        background-color: var(--editor-selection);
+        background-color: var(--bg-selected);
       }
       &.cursor-line-no-selection {
         background-color: transparent;
@@ -105,9 +106,9 @@ atom-text-editor[mini] {
   max-height: @ui-line-height * 5; // rows
   padding-left: @ui-padding/3;
   border-radius: var(--border-radius);
-  color: var(--input-fg);
+  color: var(--fg-strong);
   border: var(--border);
-  background-color: var(--input-bg);
+  background-color: var(--bg-input);
 
   .placeholder-text {
     color: @text-color-subtle;

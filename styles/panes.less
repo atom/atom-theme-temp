@@ -6,8 +6,6 @@ atom-pane-container {
     border-right: var(--border);
     border-bottom: var(--border);
 
-    background-color: var(--editor-bg);
-
     .item-views {
       // prevent atom-text-editor from leaking ouside might improve performance
       overflow: hidden;
@@ -24,6 +22,6 @@ atom-pane-axis.pane-column:last-child > atom-pane {
 }
 
 atom-pane-container atom-pane .item-views .pane-item {
-  color: inherit;
-  background-color: transparent;
+  color: var(--fg);
+  background-color: var(--bg);
 }
