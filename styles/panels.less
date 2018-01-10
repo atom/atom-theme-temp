@@ -43,24 +43,24 @@ atom-panel {
     border-radius: var(--border-radius);
   }
   & .panel-heading {
-    border-color: var(--border-radius);
+    border-color: var(--border-color);
   }
 }
 
 .panel-heading {
   .text(normal);
   border-bottom: var(--border);
-  background-color: @panel-heading-background-color;
+  background-color: var(--bg-highlight);
 
   .btn {
     padding-left: 8px;
     padding-right: 8px;
-    .btn-default(
-      lighten(@button-background-color, 10%),
-      lighten(@button-background-color-hover, 10%),
-      lighten(@button-background-color-selected, 10%),
-      lighten(@text-color, 10%)
-    );
+    // .btn-default(
+    //   lighten(@button-background-color, 10%),
+    //   lighten(@button-background-color-hover, 10%),
+    //   lighten(@button-background-color-selected, 10%),
+    //   lighten(@text-color, 10%)
+    // );
   }
 }
 

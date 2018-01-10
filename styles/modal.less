@@ -13,7 +13,7 @@ atom-panel.modal {
   max-width: @modal-width;
   margin: 0 auto;
   left: initial;
-  color: @text-color;
+  color: var(--fg);
   background-color: transparent;
   padding: @ui-padding/2;
 
@@ -27,8 +27,8 @@ atom-panel.modal {
 
   .select-list ol.list-group,
   &.select-list ol.list-group {
-    border: 1px solid @overlay-border-color;
-    background-color: lighten(@overlay-background-color, 2%);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-highlight);
 
     &:empty {
       border: none;
@@ -38,7 +38,7 @@ atom-panel.modal {
     li {
       padding: @modal-padding;
       line-height: @ui-line-height;
-      border-bottom: 1px solid @overlay-border-color;
+      border-bottom: 1px solid var(--border-color);
 
       &:last-of-type {
         border-bottom: none;
@@ -59,7 +59,7 @@ atom-panel.modal {
 
       &.selected {
         .status.icon {
-          color: @text-color-selected;
+          color: var(--fg-strong);
         }
       }
     }
@@ -90,8 +90,8 @@ atom-panel.modal {
     right: 0;
     bottom: 0;
     z-index: 0;
-    background-color: @overlay-background-color;
-    border-radius: @component-border-radius*2;
+    background-color: var(--bg);
+    border-radius: ~'calc( var(--border-radius) * 2 )';
     box-shadow: 0 6px 12px -2px hsla(0,0%,0%,.4);
   }
 
@@ -106,15 +106,15 @@ atom-panel.modal {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: @overlay-backdrop-color;
-    opacity: @overlay-backdrop-opacity;
+    background: var(--app-bg);
+    opacity: .9;
     backface-visibility: hidden; // fixes scrollbar on retina screens
     -webkit-animation: overlay-fade .24s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   @-webkit-keyframes overlay-fade {
     0% { opacity: 0; }
-    100% { opacity: @overlay-backdrop-opacity; }
+    100% { opacity: .9; }
   }
 
 }

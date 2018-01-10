@@ -8,6 +8,11 @@ h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.2em; }
 
+a,
+a:hover {
+  color: var(--accent-fg)
+}
+
 p {
   line-height: 1.6;
   margin-bottom: 15px;
@@ -28,8 +33,8 @@ pre {
 
 code {
   .text(highlight);
-  background: @background-color-highlight;
-  border-radius: @component-border-radius;
+  background: var(--bg-highlight);
+  border-radius: var(--border-radius);
 }
 
 .selected { .text(highlight); }
@@ -61,8 +66,8 @@ code {
 .highlight {
   .highlight-mixin();
   font-weight: 700;
-  color: @text-color-highlight;
-  background-color: @background-color-highlight;
+  color: var(--fg-strong);
+  background-color: var(--bg-highlight);
 }
 
 .highlight-color(@name, @background-color) {
@@ -74,10 +79,10 @@ code {
     background-color: @background-color;
   }
 }
-.highlight-color(   info, @background-color-info);
-.highlight-color(warning, @background-color-warning);
-.highlight-color(  error, @background-color-error);
-.highlight-color(success, @background-color-success);
+.highlight-color(   info, var(--accent-bg) );
+.highlight-color(warning, var(--warning-bg) );
+.highlight-color(  error, var(--error-bg) );
+.highlight-color(success, var(--success-bg) );
 
 .results-view .path-details.list-item {
   color: darken(@text-color-highlight, 18%);

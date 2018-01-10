@@ -10,9 +10,9 @@
   .tooltip-inner {
     line-height: 1;
     padding: @ui-padding*.5 @ui-padding*.65;
-    border-radius: @component-border-radius;
-    background-color: @tooltip-background-color;
-    color: @tooltip-text-color;
+    border-radius: var(--border-radius);
+    background-color: var(--accent-bg);
+    color: var(--state-fg);
     white-space: nowrap;
     max-width: none;
   }
@@ -22,32 +22,32 @@
     padding: .1em .4em;
     margin: 0 @ui-padding*-.35 0 @ui-padding*.25;
     border-radius: max(2px, @component-border-radius / 2);
-    color: @tooltip-text-key-color;
-    background: @tooltip-background-key-color;
+    color: var(--accent-bg);
+    background: var(--state-fg);
   }
 
   &.top .tooltip-arrow {
-    border-top-color: @tooltip-background-color;
+    border-top-color: var(--accent-bg);
   }
   &.top-left .tooltip-arrow {
-    border-top-color: @tooltip-background-color;
+    border-top-color: var(--accent-bg);
   }
   &.top-right .tooltip-arrow {
-    border-top-color: @tooltip-background-color;
+    border-top-color: var(--accent-bg);
   }
   &.right .tooltip-arrow {
-    border-right-color: @tooltip-background-color;
+    border-right-color: var(--accent-bg);
   }
   &.left .tooltip-arrow {
-    border-left-color: @tooltip-background-color;
+    border-left-color: var(--accent-bg);
   }
   &.bottom .tooltip-arrow {
-    border-bottom-color: @tooltip-background-color;
+    border-bottom-color: var(--accent-bg);
   }
   &.bottom-left .tooltip-arrow {
-    border-bottom-color: @tooltip-background-color;
+    border-bottom-color: var(--accent-bg);
   }
   &.bottom-right .tooltip-arrow {
-    border-bottom-color: @tooltip-background-color;
+    border-bottom-color: var(--accent-bg);
   }
 }

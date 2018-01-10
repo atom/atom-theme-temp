@@ -101,18 +101,51 @@
 
 
 
+// Autocomplete ---------------------------
+
+autocomplete-suggestion-list.select-list.popover-list ol.list-group li,
+autocomplete-suggestion-list.select-list.popover-list ol.list-group li.selected .word {
+  color: var(--fg);
+}
+
+autocomplete-suggestion-list .character-match,
+autocomplete-suggestion-list.select-list.popover-list ol.list-group li.selected .character-match {
+  color: var(--fg-strong);
+}
+
+autocomplete-suggestion-list.select-list.popover-list .suggestion-description {
+  color: var(--fg);
+  background-color: var(--bg-highlight);
+}
+
+autocomplete-suggestion-list {
+  .icon.property {
+    color: var(--fg);
+    background-color: var(--bg-highlight);
+  }
+
+  .selected .icon.property {
+    color: var(--fg-strong);
+    background-color: var(--bg-selected);
+  }
+}
+
 
 // Timecop ---------------------------
 
 .timecop {
+  .package {
+    color: inherit;
+  }
+
   .timecop-panel {
     padding: @component-padding/2;
-    background-color: @level-2-color;
+    background-color: var(--bg);
   }
 
   .tool-panel {
     padding: @component-padding/2;
-    background-color: @level-2-color;
+    background-color: var(--bg);
   }
 
   .inset-panel {
@@ -122,7 +155,7 @@
   .panel-heading {
     .text(highlight);
     border-color: var(--border-color);
-    background-color: @level-1-color;
+    background-color: var(--bg-highlight);
   }
 
   .list-item .inline-block {
@@ -135,7 +168,7 @@
 
 .command-palette .list-group .character-match,
 .fuzzy-finder .list-group .character-match {
-  color: @accent-only-text-color;
+  color: var(--accent-fg);
 }
 
 
@@ -143,7 +176,7 @@
 
 .deprecation-cop {
   .deprecation-overview {
-    background-color: @level-2-color;
+    background-color: var(--bg);
     border-bottom: var(--border);
   }
 }
@@ -171,6 +204,19 @@
   .example .example-code {
     border-color: var(--border-color);
     background-color: var(--bg);
+  }
+
+  [data-name="icons"] .icon {
+    color: inherit;
+    &:before {
+      color: inherit;
+    }
+    &:hover {
+      color: var(--fg-strong);
+      &:before {
+        color: inherit;
+      }
+    }
   }
 }
 
@@ -204,6 +250,7 @@
     color: var(--fg-strong);
   }
 }
+
 
 
 
