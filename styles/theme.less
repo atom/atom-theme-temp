@@ -4,30 +4,34 @@
 // App
 
 html {
-  --fg:        var(--app-fg);
-  --fg-strong: var(--app-fg-strong);
-  --fg-subtle: var(--app-fg-subtle);
+  --fg:           var(--app-fg);
+  --fg-strong:    var(--app-fg-strong);
+  --fg-subtle:    var(--app-fg-subtle);
 
   --bg:           var(--app-bg);
   --bg-highlight: var(--app-bg-highlight);
   --bg-selected:  var(--app-bg-selected);
   --bg-control:   var(--app-bg-control);
   --bg-input:     var(--app-bg-input);
+
+  --border:    var(--app-border);
 }
 
 
 // Center panes
 
 atom-workspace > atom-workspace-axis.horizontal > atom-workspace-axis.vertical > .panes {
-  --fg:        var(--editor-fg);
-  --fg-strong: var(--editor-fg-strong);
-  --fg-subtle: var(--editor-fg-subtle);
+  --fg:           var(--editor-fg);
+  --fg-strong:    var(--editor-fg-strong);
+  --fg-subtle:    var(--editor-fg-subtle);
 
   --bg:           var(--editor-bg);
   --bg-highlight: var(--editor-bg-highlight);
   --bg-selected:  var(--editor-bg-selected);
   --bg-control:   var(--editor-bg-control);
   --bg-input:     var(--editor-bg-input);
+
+  --border:       var(--editor-border);
 }
 
 
@@ -35,13 +39,15 @@ atom-workspace > atom-workspace-axis.horizontal > atom-workspace-axis.vertical >
 
 .modal,
 .popover-list {
-  --fg:        var(--overlay-fg);
-  --fg-strong: var(--overlay-fg-strong);
-  --fg-subtle: var(--overlay-fg-subtle);
+  --fg:           var(--overlay-fg);
+  --fg-strong:    var(--overlay-fg-strong);
+  --fg-subtle:    var(--overlay-fg-subtle);
 
   --bg:           var(--overlay-bg);
   --bg-highlight: var(--overlay-bg-highlight);
   --bg-selected:  var(--overlay-bg-selected);
   --bg-control:   var(--overlay-bg-control);
   --bg-input:     var(--overlay-bg-input);
+
+  --border:       var(--overlay-border);
 }

@@ -149,12 +149,12 @@ autocomplete-suggestion-list {
   }
 
   .inset-panel {
-    border: var(--border);
+    border: 1px solid var(--border);
   }
 
   .panel-heading {
     .text(highlight);
-    border-color: var(--border-color);
+    border-color: var(--border);
     background-color: var(--bg-highlight);
   }
 
@@ -177,7 +177,7 @@ autocomplete-suggestion-list {
 .deprecation-cop {
   .deprecation-overview {
     background-color: var(--bg);
-    border-bottom: var(--border);
+    border-bottom: 1px solid var(--border);
   }
 }
 
@@ -198,11 +198,11 @@ autocomplete-suggestion-list {
 
   .example .example-rendered {
     background-color: transparent;
-    border-color: var(--border-color);
+    border-color: var(--border);
   }
 
   .example .example-code {
-    border-color: var(--border-color);
+    border-color: var(--border);
     background-color: var(--bg);
   }
 
@@ -223,7 +223,7 @@ autocomplete-suggestion-list {
 .styleguide-sections {
   & > section {
     background-color: initial;
-    border-bottom: var(--border);
+    border-bottom: 1px solid var(--border);
     border-top: none;
   
     & > h2 {
@@ -236,7 +236,7 @@ autocomplete-suggestion-list {
   section.collapsed > .section-heading {
     color: var(--fg);
     background-color: var(--bg-highlight);
-    border-color: var(--border-color);
+    border-color: var(--border);
     &:hover {
       color: var(--fg-strong);
       background-color: var(--bg-selected);
@@ -245,7 +245,7 @@ autocomplete-suggestion-list {
 }
 
 .styleguide-header {
-  border-color: var(--border-color);
+  border-color: var(--border);
   h1 {
     color: var(--fg-strong);
   }
@@ -266,13 +266,13 @@ autocomplete-suggestion-list {
   // just a single border + more spacing
   &.tool-bar-horizontal .tool-bar-spacer {
     border-left: 0 none;
-    border-color: var(--border-color);
+    border-color: var(--border);
     margin-left: var(--spacer);
     margin-right: var(--spacer);
   }
   &.tool-bar-vertical .tool-bar-spacer {
     border-bottom: 0 none;
-    border-color: var(--border-color);
+    border-color: var(--border);
     margin-top: var(--spacer);
     margin-bottom: var(--spacer);
   }

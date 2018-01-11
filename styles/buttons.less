@@ -1,5 +1,5 @@
 
-@btn-border: 1px solid var(--border-color);
+@btn-border: 1px solid var(--border);
 @btn-padding: 0 @ui-size/1.25;
 
 // Mixins -----------------------
@@ -118,7 +118,7 @@
 
 .btn-group > .btn {
   z-index: 0;
-  border-color: var(--border-color);
+  border-color: var(--border);
 
   &:hover {
     z-index: 0;
@@ -174,7 +174,7 @@
 
   &.selected:focus {
     border-color: var(--accent-fg);
-    box-shadow: inset 0 0 0 1px var(--border-color), 0 0 0 1px var(--accent-fg);
+    box-shadow: inset 0 0 0 1px var(--border), 0 0 0 1px var(--accent-fg);
   }
 }
 
