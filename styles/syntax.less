@@ -1,17 +1,37 @@
 
-// Language syntax highlighting
+// Syntax variables
 
-.syntax--variable { color: var(--syntax-variable); }
-.syntax--constant { color: var(--syntax-constant); }
-.syntax--property { color: var(--syntax-property); }
-.syntax--value    { color: var(--syntax-value); }
-.syntax--function { color: var(--syntax-function); }
-.syntax--method   { color: var(--syntax-method); }
-.syntax--class    { color: var(--syntax-class); }
-.syntax--keyword  { color: var(--syntax-keyword); }
-.syntax--string   { color: var(--syntax-string); }
-.syntax--tag      { color: var(--syntax-tag); }
-.syntax--attribute{ color: var(--syntax-attribute); }
+:root {
+  --syntax:             var(--syntax-m-1);
+  --syntax-tag:         var(--syntax-m-1);
+  --syntax-attribute:   var(--syntax-m-2);
+  --syntax-punctuation: var(--syntax-m-3);
+  --syntax-comment:     var(--syntax-m-4);
 
-.syntax--punctuation { color: var(--syntax-punctuation); }
-.syntax--comment { color: var(--syntax-comment); font-style: italic; }
+  --syntax-variable:   var(--syntax-1);
+  --syntax-constant:   var(--syntax-2);
+  --syntax-property:   var(--syntax-3);
+  --syntax-value:      var(--syntax-4);
+  --syntax-function:   var(--syntax-5);
+  --syntax-method:     var(--syntax-5);
+  --syntax-class:      var(--syntax-6);
+  --syntax-keyword:    var(--syntax-7);
+  --syntax-string:     var(--syntax-8);
+}
+
+// Syntax highlighting
+
+.syntax--variable     { color: var(--syntax-variable); }
+.syntax--constant     { color: var(--syntax-constant); }
+.syntax--property     { color: var(--syntax-property); }
+.syntax--value        { color: var(--syntax-value); }
+.syntax--function     { color: var(--syntax-function); }
+.syntax--method       { color: var(--syntax-method); }
+.syntax--class        { color: var(--syntax-class); }
+.syntax--keyword      { color: var(--syntax-keyword); }
+.syntax--string       { color: var(--syntax-string); }
+
+.syntax--tag          { color: var(--syntax-tag); }
+.syntax--attribute    { color: var(--syntax-attribute); }
+.syntax--punctuation  { color: var(--syntax-punctuation); }
+.syntax--comment      { color: var(--syntax-comment); font-style: italic; }

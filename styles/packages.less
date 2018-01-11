@@ -168,7 +168,7 @@ autocomplete-suggestion-list {
 
 .command-palette .list-group .character-match,
 .fuzzy-finder .list-group .character-match {
-  color: var(--accent-fg);
+  color: var(--fg-strong);
 }
 
 
@@ -290,4 +290,29 @@ autocomplete-suggestion-list {
       background: var(--bg-selected);
     }
   }
+}
+
+
+
+// Terminal Tab ---------------------------
+
+terminal-view {
+  background-color: var(--bg);
+  .terminal,
+  .terminal .xterm-viewport {
+    background-color: transparent;
+  }
+
+  .terminal {
+    color: var(--syntax);
+  }
+
+  .terminal .xterm-color-1 { color: var(--syntax-1); }
+  .terminal .xterm-color-2 { color: var(--syntax-2); }
+  .terminal .xterm-color-3 { color: var(--syntax-3); }
+  .terminal .xterm-color-4 { color: var(--syntax-4); }
+  .terminal .xterm-color-5 { color: var(--syntax-5); }
+  .terminal .xterm-color-6 { color: var(--syntax-6); }
+  .terminal .xterm-color-7 { color: var(--syntax-7); }
+  .terminal .xterm-color-8 { color: var(--syntax-8); }
 }
