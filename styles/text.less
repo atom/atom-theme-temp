@@ -47,15 +47,15 @@ code {
 .text-error { .text(error); }
 .text-info {
   .text(info);
-  &:hover { color: @text-color-info; }
+  &:hover { color: var(--accent-fg); }
 }
 .text-warning {
   .text(warning);
-  &:hover { color: @text-color-warning; }
+  &:hover { color: var(--warning-fg); }
 }
 .text-success {
   .text(success);
-  &:hover { color: @text-color-success; }
+  &:hover { color: var(--success-fg); }
 }
 
 .highlight-mixin {
