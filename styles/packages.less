@@ -245,3 +245,47 @@ terminal-view {
   .terminal .xterm-color-7 { color: var(--syntax-7); }
   .terminal .xterm-color-8 { color: var(--syntax-8); }
 }
+
+
+
+// Nuclide
+
+
+.nuclide-ui-toolbar {
+  border-color: var(--border);
+}
+
+.nuclide-ui-table {
+  border-color: var(--border);
+}
+
+.nuclide-ui-table-header {
+  color: var(--fg);
+  border-color: var(--border);
+  background-color: var(--bg-selected);
+}
+
+.nuclide-ui-table-row-alternate {
+  background-color: var(--bg-highlight);
+}
+
+.nuclide-ui-table-header-cell,
+.nuclide-ui-table-body-cell {
+  border-color: var(--border);
+}
+
+.nuclide-ui-table-row-selectable:not(.nuclide-ui-table-row-using-keyboard-nav):hover {
+  color: var(--fg-strong);
+  background-color: var(--bg-selected);
+}
+
+.nuclide-ui-table-row-selected {
+  color: var(--state-fg);
+  background-color: var(--bg-selected);
+}
+
+.nuclide-ui-table:focus .nuclide-ui-table-row-selected, .nuclide-ui-table:focus .nuclide-ui-table-row-selected a {
+  color: var(--state-fg);
+  background-color: var(--accent-bg);
+}
+
